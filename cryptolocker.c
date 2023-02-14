@@ -20,8 +20,13 @@ int tree(const char *);
 
 int main(void)
 {
-	const char *startpath = "change me";
-	tree(startpath);
+	// "/home/username/Downloads", "/home/username/Pictures", "/home/username/Documents", "/home/username/Desktop"
+	const unsigned char *startpaths[] = {"change me"};
+	const size_t size_paths = sizeof(startpaths) / sizeof(startpaths[0]);
+	unsigned int i;
+
+	for (i = 0; i < size_paths; ++i)
+		tree(startpath);
 
 	return 0;
 }
